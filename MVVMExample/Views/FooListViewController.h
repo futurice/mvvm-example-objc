@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FooListViewModel.h"
 
-@interface ViewController : UIViewController
+@interface FooListViewController : UITableViewController
+
+- (instancetype)initWithViewModel:(FooListViewModel *)viewModel;
 
 @end
 
