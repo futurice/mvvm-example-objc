@@ -81,8 +81,7 @@
 			children = (
 				0F3B74F71CD2539200E8F8C1 /* AppDelegate.h */,
 				0F3B74F81CD2539200E8F8C1 /* AppDelegate.m */,
-				0F3B74FA1CD2539200E8F8C1 /* ViewController.h */,
-				0F3B74FB1CD2539200E8F8C1 /* ViewController.m */,
+				0F3B75191CD25BFA00E8F8C1 /* Views */,
 				0F3B75001CD2539200E8F8C1 /* Assets.xcassets */,
 				0F3B75021CD2539200E8F8C1 /* LaunchScreen.storyboard */,
 				0F3B75051CD2539200E8F8C1 /* Info.plist */,
@@ -106,6 +105,15 @@
 				0F3B75101CD2539200E8F8C1 /* Info.plist */,
 			);
 			path = MVVMExampleTests;
+			sourceTree = "<group>";
+		};
+		0F3B75191CD25BFA00E8F8C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F3B74FA1CD2539200E8F8C1 /* ViewController.h */,
+				0F3B74FB1CD2539200E8F8C1 /* ViewController.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
