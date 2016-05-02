@@ -4,6 +4,7 @@
 # use_frameworks!
 
 target 'MVVMExample' do
+  link_with 'MVVMExampleTests'
   pod 'ReactiveCocoa', '2.5'
   pod 'libextobjc/EXTScope'
 end
