@@ -1,8 +1,11 @@
 ## Instructions
 
-* [ ] Try fetching data from the internet instead (e.g. [https://api.myjson.com/bins/nghk](), or create your own JSON there)
 * [ ] Make the failing test pass
-* [ ] Add some more tests
+* [ ] Add another view (`PersonViewController`) with its own view model that's initialized with a person
+* [ ] Test that the `PersonListViewModel` creates the correct `PersonViewModel`
+* [ ] Try fetching data from the internet instead (e.g. [https://api.myjson.com/bins/nghk](), or create your own
+JSON there)
+* [ ] Add some fields to the model, e.g. an `NSDate` birthdate that must be formatted
 
 ## Takeaway points
 
