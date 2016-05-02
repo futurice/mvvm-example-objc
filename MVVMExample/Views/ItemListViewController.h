@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FooListViewModel.h"
+#import "ItemListViewModel.h"
 
-@interface FooListViewController : UITableViewController
+@interface ItemListViewController : UITableViewController
 
-- (instancetype)initWithViewModel:(FooListViewModel *)viewModel;
+- (instancetype)initWithViewModel:(ItemListViewModel *)viewModel;
 
 @end
 

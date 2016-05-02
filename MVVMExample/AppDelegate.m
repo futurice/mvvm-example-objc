@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "FooListViewController.h"
+#import "ItemListViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,9 +19,9 @@
 
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 
-    FooListViewModel *fooListVM = [[FooListViewModel alloc] init];
-    FooListViewController *fooListVC = [[FooListViewController alloc] initWithViewModel:fooListVM];
-    self.window.rootViewController = fooListVC;
+    ItemListViewModel *itemListVM = [[ItemListViewModel alloc] init];
+    ItemListViewController *itemListVC = [[ItemListViewController alloc] initWithViewModel:itemListVM];
+    self.window.rootViewController = itemListVC;
 
     [self.window makeKeyAndVisible];
 

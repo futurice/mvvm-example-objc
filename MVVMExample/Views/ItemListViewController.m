@@ -6,17 +6,17 @@
 //  Copyright © 2016 Futurice. All rights reserved.
 //
 
-#import "FooListViewController.h"
+#import "ItemListViewController.h"
 
-@interface FooListViewController ()
+@interface ItemListViewController ()
 
-@property (nonatomic, strong, readonly) FooListViewModel *viewModel;
+@property (nonatomic, strong, readonly) ItemListViewModel *viewModel;
 
 @end
 
-@implementation FooListViewController
+@implementation ItemListViewController
 
-- (instancetype)initWithViewModel:(FooListViewModel *)viewModel {
+- (instancetype)initWithViewModel:(ItemListViewModel *)viewModel {
     self = [super initWithStyle:UITableViewStylePlain];
     if (!self) return nil;
 
