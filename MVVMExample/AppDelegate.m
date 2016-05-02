@@ -28,8 +28,9 @@
     // Create view controller, injecting view model
     PersonListViewController *personListVC = [[PersonListViewController alloc] initWithViewModel:personListVM];
 
-    // Set it as root view controller
-    self.window.rootViewController = personListVC;
+    // Wrap it in navigation controller before setting it as root view
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:personListVC];
+    self.window.rootViewController = navigationController;
 
     [self.window makeKeyAndVisible];
 
