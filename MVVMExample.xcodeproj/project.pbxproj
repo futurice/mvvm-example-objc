@@ -16,6 +16,7 @@
 		0F3B75211CD26E5D00E8F8C1 /* PersonListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B75201CD26E5D00E8F8C1 /* PersonListViewModel.m */; };
 		5BAD5E3A1CD7777200014109 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD5E391CD7777200014109 /* Person.m */; };
 		5BAD5E3E1CD77A6700014109 /* PersonStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD5E3D1CD77A6700014109 /* PersonStore.m */; };
+		5BB3A12C1CD7887A00326DE9 /* NSURLSession+RAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3A12B1CD7887A00326DE9 /* NSURLSession+RAC.m */; };
 		F8C2EC3C6C2C03E830BF5D09 /* libPods-MVVMExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 020C822CAA0580EF3B550B0B /* libPods-MVVMExample.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,8 @@
 		5BAD5E391CD7777200014109 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		5BAD5E3C1CD77A6700014109 /* PersonStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonStore.h; sourceTree = "<group>"; };
 		5BAD5E3D1CD77A6700014109 /* PersonStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonStore.m; sourceTree = "<group>"; };
+		5BB3A12A1CD7887A00326DE9 /* NSURLSession+RAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+RAC.h"; sourceTree = "<group>"; };
+		5BB3A12B1CD7887A00326DE9 /* NSURLSession+RAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+RAC.m"; sourceTree = "<group>"; };
 		91060B12E0DA0BFF10CB03DB /* Pods-MVVMExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMExample/Pods-MVVMExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +104,7 @@
 				0F3B751E1CD26D2800E8F8C1 /* ViewModels */,
 				5BAD5E371CD7774B00014109 /* Models */,
 				5BAD5E3B1CD77A3700014109 /* Stores */,
+				5BB3A1291CD7884C00326DE9 /* Helpers */,
 				0F3B75001CD2539200E8F8C1 /* Assets.xcassets */,
 				0F3B75021CD2539200E8F8C1 /* LaunchScreen.storyboard */,
 				0F3B75051CD2539200E8F8C1 /* Info.plist */,
@@ -169,6 +173,15 @@
 				5BAD5E3D1CD77A6700014109 /* PersonStore.m */,
 			);
 			path = Stores;
+			sourceTree = "<group>";
+		};
+		5BB3A1291CD7884C00326DE9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5BB3A12A1CD7887A00326DE9 /* NSURLSession+RAC.h */,
+				5BB3A12B1CD7887A00326DE9 /* NSURLSession+RAC.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		DD42A4FC88421EE8EF9E6145 /* Frameworks */ = {
@@ -334,6 +347,7 @@
 				0F3B74FC1CD2539200E8F8C1 /* PersonListViewController.m in Sources */,
 				0F3B75211CD26E5D00E8F8C1 /* PersonListViewModel.m in Sources */,
 				0F3B74F91CD2539200E8F8C1 /* AppDelegate.m in Sources */,
+				5BB3A12C1CD7887A00326DE9 /* NSURLSession+RAC.m in Sources */,
 				0F3B74F61CD2539200E8F8C1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
