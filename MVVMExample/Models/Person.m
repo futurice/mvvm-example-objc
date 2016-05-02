@@ -10,4 +10,14 @@
 
 @implementation Person
 
+- (instancetype)initWithFirstName:(NSString *)firstName lastName:(NSString *)lastName {
+    self = [super init];
+    if (!self) return nil;
+
+    _firstName = [firstName copy];
+    _lastName = [lastName copy];
+
+    return self;
+}
+
 @end

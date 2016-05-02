@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PersonStore.h"
 
 @interface PersonListViewModel : NSObject
+
+- (instancetype)initWithStore:(PersonStore *)store;
+
+- (NSUInteger)numberOfPeopleInSection:(NSInteger)section;
+- (NSString *)fullNameAtIndexPath:(NSIndexPath *)indexPath;
 
 @end

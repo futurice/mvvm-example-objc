@@ -19,8 +19,16 @@
 
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 
-    PersonListViewModel *personListVM = [[PersonListViewModel alloc] init];
+    // Create store
+    PersonStore *personStore = [[PersonStore alloc] init];
+
+    // Create view model, injecting store
+    PersonListViewModel *personListVM = [[PersonListViewModel alloc] initWithStore:personStore];
+
+    // Create view controller, injecting view model
     PersonListViewController *personListVC = [[PersonListViewController alloc] initWithViewModel:personListVM];
+
+    // Set it as root view controller
     self.window.rootViewController = personListVC;
 
     [self.window makeKeyAndVisible];

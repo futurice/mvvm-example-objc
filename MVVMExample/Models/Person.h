@@ -10,4 +10,9 @@
 
 @interface Person : NSObject
 
+@property (nonatomic, copy, readonly) NSString *firstName;
+@property (nonatomic, copy, readonly) NSString *lastName;
+
+- (instancetype)initWithFirstName:(NSString *)firstName lastName:(NSString *)lastName;
+
 @end

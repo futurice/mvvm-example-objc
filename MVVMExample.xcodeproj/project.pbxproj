@@ -15,6 +15,7 @@
 		0F3B750F1CD2539200E8F8C1 /* MVVMExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B750E1CD2539200E8F8C1 /* MVVMExampleTests.m */; };
 		0F3B75211CD26E5D00E8F8C1 /* PersonListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B75201CD26E5D00E8F8C1 /* PersonListViewModel.m */; };
 		5BAD5E3A1CD7777200014109 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD5E391CD7777200014109 /* Person.m */; };
+		5BAD5E3E1CD77A6700014109 /* PersonStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD5E3D1CD77A6700014109 /* PersonStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		0F3B75201CD26E5D00E8F8C1 /* PersonListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PersonListViewModel.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		5BAD5E381CD7777200014109 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		5BAD5E391CD7777200014109 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		5BAD5E3C1CD77A6700014109 /* PersonStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonStore.h; sourceTree = "<group>"; };
+		5BAD5E3D1CD77A6700014109 /* PersonStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +90,10 @@
 			children = (
 				0F3B74F71CD2539200E8F8C1 /* AppDelegate.h */,
 				0F3B74F81CD2539200E8F8C1 /* AppDelegate.m */,
-				5BAD5E371CD7774B00014109 /* Models */,
 				0F3B75191CD25BFA00E8F8C1 /* Views */,
 				0F3B751E1CD26D2800E8F8C1 /* ViewModels */,
+				5BAD5E371CD7774B00014109 /* Models */,
+				5BAD5E3B1CD77A3700014109 /* Stores */,
 				0F3B75001CD2539200E8F8C1 /* Assets.xcassets */,
 				0F3B75021CD2539200E8F8C1 /* LaunchScreen.storyboard */,
 				0F3B75051CD2539200E8F8C1 /* Info.plist */,
@@ -140,6 +144,15 @@
 				5BAD5E391CD7777200014109 /* Person.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5BAD5E3B1CD77A3700014109 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				5BAD5E3C1CD77A6700014109 /* PersonStore.h */,
+				5BAD5E3D1CD77A6700014109 /* PersonStore.m */,
+			);
+			path = Stores;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BAD5E3E1CD77A6700014109 /* PersonStore.m in Sources */,
 				5BAD5E3A1CD7777200014109 /* Person.m in Sources */,
 				0F3B74FC1CD2539200E8F8C1 /* PersonListViewController.m in Sources */,
 				0F3B75211CD26E5D00E8F8C1 /* PersonListViewModel.m in Sources */,

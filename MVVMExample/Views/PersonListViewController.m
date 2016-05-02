@@ -16,6 +16,8 @@
 
 @implementation PersonListViewController
 
+#pragma mark - Lifecycle
+
 - (instancetype)initWithViewModel:(PersonListViewModel *)viewModel {
     self = [super initWithStyle:UITableViewStylePlain];
     if (!self) return nil;
@@ -25,10 +27,28 @@
     return self;
 }
 
+#pragma mark - View Lifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor whiteColor];
+
+    [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:@"PersonCell"];
+}
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.viewModel numberOfPeopleInSection:section];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PersonCell" forIndexPath:indexPath];
+
+    cell.textLabel.text = [self.viewModel fullNameAtIndexPath:indexPath];
+
+    return cell;
 }
 
 @end

@@ -7,7 +7,43 @@
 //
 
 #import "PersonListViewModel.h"
+#import "Person.h"
+#import <UIKit/UITableView.h>
+
+@interface PersonListViewModel ()
+
+@property (nonatomic, strong, readonly) PersonStore *store;
+@property (nonatomic, strong) NSArray *people;
+
+@end
 
 @implementation PersonListViewModel
+
+#pragma mark - Lifecycle
+
+- (instancetype)initWithStore:(PersonStore *)store {
+    self = [super init];
+    if (!self) return nil;
+
+    _store = store;
+    _people = [store fetchPeople];
+
+    return self;
+}
+
+#pragma mark - People
+
+- (NSUInteger)numberOfPeopleInSection:(NSInteger)section {
+    return self.people.count;
+}
+
+- (NSString *)fullNameAtIndexPath:(NSIndexPath *)indexPath {
+    Person *person = [self personAtIndexPath:indexPath];
+    return [NSString stringWithFormat:@"%@ %@", person.firstName, person.lastName];
+}
+
+- (Person *)personAtIndexPath:(NSIndexPath *)indexPath {
+    return self.people[indexPath.row];
+}
 
 @end
