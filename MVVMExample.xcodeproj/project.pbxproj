@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		0F3B74F61CD2539200E8F8C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B74F51CD2539200E8F8C1 /* main.m */; };
 		0F3B74F91CD2539200E8F8C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B74F81CD2539200E8F8C1 /* AppDelegate.m */; };
-		0F3B74FC1CD2539200E8F8C1 /* ItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B74FB1CD2539200E8F8C1 /* ItemListViewController.m */; };
+		0F3B74FC1CD2539200E8F8C1 /* PersonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B74FB1CD2539200E8F8C1 /* PersonListViewController.m */; };
 		0F3B75011CD2539200E8F8C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F3B75001CD2539200E8F8C1 /* Assets.xcassets */; };
 		0F3B75041CD2539200E8F8C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3B75021CD2539200E8F8C1 /* LaunchScreen.storyboard */; };
 		0F3B750F1CD2539200E8F8C1 /* MVVMExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B750E1CD2539200E8F8C1 /* MVVMExampleTests.m */; };
-		0F3B75211CD26E5D00E8F8C1 /* ItemListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B75201CD26E5D00E8F8C1 /* ItemListViewModel.m */; };
+		0F3B75211CD26E5D00E8F8C1 /* PersonListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B75201CD26E5D00E8F8C1 /* PersonListViewModel.m */; };
+		5BAD5E3A1CD7777200014109 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD5E391CD7777200014109 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,16 +32,18 @@
 		0F3B74F51CD2539200E8F8C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0F3B74F71CD2539200E8F8C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F3B74F81CD2539200E8F8C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		0F3B74FA1CD2539200E8F8C1 /* ItemListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ItemListViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		0F3B74FB1CD2539200E8F8C1 /* ItemListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ItemListViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0F3B74FA1CD2539200E8F8C1 /* PersonListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PersonListViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0F3B74FB1CD2539200E8F8C1 /* PersonListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PersonListViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		0F3B75001CD2539200E8F8C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F3B75031CD2539200E8F8C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F3B75051CD2539200E8F8C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F3B750A1CD2539200E8F8C1 /* MVVMExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3B750E1CD2539200E8F8C1 /* MVVMExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMExampleTests.m; sourceTree = "<group>"; };
 		0F3B75101CD2539200E8F8C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F3B751F1CD26E5D00E8F8C1 /* ItemListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ItemListViewModel.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		0F3B75201CD26E5D00E8F8C1 /* ItemListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ItemListViewModel.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0F3B751F1CD26E5D00E8F8C1 /* PersonListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PersonListViewModel.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0F3B75201CD26E5D00E8F8C1 /* PersonListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PersonListViewModel.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		5BAD5E381CD7777200014109 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		5BAD5E391CD7777200014109 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 			children = (
 				0F3B74F71CD2539200E8F8C1 /* AppDelegate.h */,
 				0F3B74F81CD2539200E8F8C1 /* AppDelegate.m */,
+				5BAD5E371CD7774B00014109 /* Models */,
 				0F3B75191CD25BFA00E8F8C1 /* Views */,
 				0F3B751E1CD26D2800E8F8C1 /* ViewModels */,
 				0F3B75001CD2539200E8F8C1 /* Assets.xcassets */,
@@ -114,8 +118,8 @@
 		0F3B75191CD25BFA00E8F8C1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0F3B74FA1CD2539200E8F8C1 /* ItemListViewController.h */,
-				0F3B74FB1CD2539200E8F8C1 /* ItemListViewController.m */,
+				0F3B74FA1CD2539200E8F8C1 /* PersonListViewController.h */,
+				0F3B74FB1CD2539200E8F8C1 /* PersonListViewController.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -123,10 +127,19 @@
 		0F3B751E1CD26D2800E8F8C1 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				0F3B751F1CD26E5D00E8F8C1 /* ItemListViewModel.h */,
-				0F3B75201CD26E5D00E8F8C1 /* ItemListViewModel.m */,
+				0F3B751F1CD26E5D00E8F8C1 /* PersonListViewModel.h */,
+				0F3B75201CD26E5D00E8F8C1 /* PersonListViewModel.m */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5BAD5E371CD7774B00014109 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5BAD5E381CD7777200014109 /* Person.h */,
+				5BAD5E391CD7777200014109 /* Person.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,8 +241,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F3B74FC1CD2539200E8F8C1 /* ItemListViewController.m in Sources */,
-				0F3B75211CD26E5D00E8F8C1 /* ItemListViewModel.m in Sources */,
+				5BAD5E3A1CD7777200014109 /* Person.m in Sources */,
+				0F3B74FC1CD2539200E8F8C1 /* PersonListViewController.m in Sources */,
+				0F3B75211CD26E5D00E8F8C1 /* PersonListViewModel.m in Sources */,
 				0F3B74F91CD2539200E8F8C1 /* AppDelegate.m in Sources */,
 				0F3B74F61CD2539200E8F8C1 /* main.m in Sources */,
 			);

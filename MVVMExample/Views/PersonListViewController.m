@@ -1,22 +1,22 @@
 //
-//  ViewController.m
+//  PersonListViewController.m
 //  MVVMExample
 //
 //  Created by Martin Richter on 28/04/16.
 //  Copyright © 2016 Futurice. All rights reserved.
 //
 
-#import "ItemListViewController.h"
+#import "PersonListViewController.h"
 
-@interface ItemListViewController ()
+@interface PersonListViewController ()
 
-@property (nonatomic, strong, readonly) ItemListViewModel *viewModel;
+@property (nonatomic, strong, readonly) PersonListViewModel *viewModel;
 
 @end
 
-@implementation ItemListViewController
+@implementation PersonListViewController
 
-- (instancetype)initWithViewModel:(ItemListViewModel *)viewModel {
+- (instancetype)initWithViewModel:(PersonListViewModel *)viewModel {
     self = [super initWithStyle:UITableViewStylePlain];
     if (!self) return nil;
 
