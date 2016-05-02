@@ -34,7 +34,11 @@
     return self;
 }
 
-#pragma mark - People
+#pragma mark - Data Source
+
+- (NSString *)title {
+    return @"People";
+}
 
 - (NSUInteger)numberOfPeopleInSection:(NSInteger)section {
     return self.people.count;

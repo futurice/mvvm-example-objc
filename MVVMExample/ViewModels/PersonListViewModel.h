@@ -16,6 +16,7 @@
 
 - (instancetype)initWithStore:(PersonStore *)store;
 
+- (NSString *)title;
 - (NSUInteger)numberOfPeopleInSection:(NSInteger)section;
 - (NSString *)fullNameAtIndexPath:(NSIndexPath *)indexPath;
 

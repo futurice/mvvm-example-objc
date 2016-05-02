@@ -44,7 +44,10 @@
 
 - (void)bindViewModel {
 
+    self.title = [self.viewModel title];
+
     @weakify(self);
+
     [[self.viewModel.hasUpdatedContent
         deliverOnMainThread]
         subscribeNext:^(id _) {
