@@ -49,9 +49,9 @@
     @weakify(self);
 
     [[self.viewModel.hasUpdatedContent
-        deliverOnMainThread]
+        deliverOnMainThread] // important, or view won't update instantly
         subscribeNext:^(id _) {
-            @strongify(self);
+            @strongify(self); // this, together with @weakify, prevents a retain cycle
             NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
             [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
         }];
