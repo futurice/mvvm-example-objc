@@ -9,11 +9,12 @@ JSON there)
 
 ## Takeaway points
 
-* MVVM gives you better interfaces for testing
+* Better separation between UI and state of the app
+* Testing is easier due to cleaner interfaces and dependency injection
 
 ## Additional material
 
-To fetch data from a JSON backend:
+To fetch data from a JSON backend, you can do something like this in the store:
 
 ```objective-c
 NSURL *url = [NSURL URLWithString:@"https://api.myjson.com/bins/nghk"];
