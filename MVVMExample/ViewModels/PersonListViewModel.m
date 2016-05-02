@@ -26,7 +26,10 @@
     if (!self) return nil;
 
     _store = store;
-    _people = [store fetchPeople];
+
+    RAC(self, people) = [[store fetchPeople] startWith:@[]];
+
+    _hasUpdatedContent = [RACObserve(self, people) mapReplace:@(YES)];
 
     return self;
 }

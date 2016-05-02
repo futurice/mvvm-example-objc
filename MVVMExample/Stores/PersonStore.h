@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface PersonStore : NSObject
 
-- (NSArray *)fetchPeople;
+- (RACSignal *)fetchPeople;
 
 @end

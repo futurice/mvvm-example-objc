@@ -7,6 +7,7 @@
 //
 
 #import "PersonListViewController.h"
+#import <libextobjc/EXTScope.h>
 
 @interface PersonListViewController ()
 
@@ -35,6 +36,22 @@
     self.view.backgroundColor = [UIColor whiteColor];
 
     [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:@"PersonCell"];
+
+    [self bindViewModel];
+}
+
+#pragma mark - Bindings
+
+- (void)bindViewModel {
+
+    @weakify(self);
+    [[self.viewModel.hasUpdatedContent
+        deliverOnMainThread]
+        subscribeNext:^(id _) {
+            @strongify(self);
+            NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
+            [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+        }];
 }
 
 #pragma mark - UITableViewDataSource

@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 #import "PersonStore.h"
 
 @interface PersonListViewModel : NSObject
+
+@property (nonatomic, readonly) RACSignal *hasUpdatedContent;
 
 - (instancetype)initWithStore:(PersonStore *)store;
 

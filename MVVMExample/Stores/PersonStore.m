@@ -11,11 +11,13 @@
 
 @implementation PersonStore
 
-- (NSArray *)fetchPeople {
-    return @[
+- (RACSignal *)fetchPeople {
+    NSArray *people = @[
         [[Person alloc] initWithFirstName:@"Jane" lastName:@"Doe"],
         [[Person alloc] initWithFirstName:@"Joe" lastName:@"Shmoe"]
     ];
+
+    return [[RACSignal return:people] delay:1];
 }
 
 @end
