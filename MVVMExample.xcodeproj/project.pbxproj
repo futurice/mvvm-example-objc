@@ -17,7 +17,10 @@
 		5BAD5E3E1CD77A6700014109 /* PersonStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD5E3D1CD77A6700014109 /* PersonStore.m */; };
 		5BB3A12C1CD7887A00326DE9 /* NSURLSession+RAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3A12B1CD7887A00326DE9 /* NSURLSession+RAC.m */; };
 		5BB3A12F1CD7986800326DE9 /* PersonListViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3A12E1CD7986800326DE9 /* PersonListViewModelTests.m */; };
-		EE3515E6568D9EA34C94F139 /* libPods-MVVMExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 020C822CAA0580EF3B550B0B /* libPods-MVVMExample.a */; };
+		BFD6F7B63B9F37F497499073 /* libPods-MVVMExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E75085200B494AB7775BD43B /* libPods-MVVMExampleTests.a */; };
+		CE67DB361CDCB43F00BC5EDE /* AppAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67DB351CDCB43F00BC5EDE /* AppAssembly.m */; };
+		CE67DB391CDCB4A200BC5EDE /* StoreAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67DB381CDCB4A200BC5EDE /* StoreAssembly.m */; };
+		CE67DB3D1CDCC0A100BC5EDE /* FakeStoreAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67DB3C1CDCC0A100BC5EDE /* FakeStoreAssembly.m */; };
 		F8C2EC3C6C2C03E830BF5D09 /* libPods-MVVMExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 020C822CAA0580EF3B550B0B /* libPods-MVVMExample.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,15 @@
 		5BB3A12B1CD7887A00326DE9 /* NSURLSession+RAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+RAC.m"; sourceTree = "<group>"; };
 		5BB3A12E1CD7986800326DE9 /* PersonListViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonListViewModelTests.m; sourceTree = "<group>"; };
 		91060B12E0DA0BFF10CB03DB /* Pods-MVVMExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMExample/Pods-MVVMExample.release.xcconfig"; sourceTree = "<group>"; };
+		CE67DB341CDCB43F00BC5EDE /* AppAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppAssembly.h; sourceTree = "<group>"; };
+		CE67DB351CDCB43F00BC5EDE /* AppAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppAssembly.m; sourceTree = "<group>"; };
+		CE67DB371CDCB4A200BC5EDE /* StoreAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreAssembly.h; sourceTree = "<group>"; };
+		CE67DB381CDCB4A200BC5EDE /* StoreAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreAssembly.m; sourceTree = "<group>"; };
+		CE67DB3B1CDCC0A100BC5EDE /* FakeStoreAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeStoreAssembly.h; sourceTree = "<group>"; };
+		CE67DB3C1CDCC0A100BC5EDE /* FakeStoreAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeStoreAssembly.m; sourceTree = "<group>"; };
+		E75085200B494AB7775BD43B /* libPods-MVVMExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVMExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB4A2FE8D3FF400849CB4416 /* Pods-MVVMExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMExampleTests/Pods-MVVMExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		F0705922427D0C5364DBB43B /* Pods-MVVMExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMExampleTests/Pods-MVVMExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE3515E6568D9EA34C94F139 /* libPods-MVVMExample.a in Frameworks */,
+				BFD6F7B63B9F37F497499073 /* libPods-MVVMExampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +114,7 @@
 			children = (
 				0F3B74F71CD2539200E8F8C1 /* AppDelegate.h */,
 				0F3B74F81CD2539200E8F8C1 /* AppDelegate.m */,
+				CE67DB331CDCB3EF00BC5EDE /* Assemblies */,
 				0F3B75191CD25BFA00E8F8C1 /* Views */,
 				0F3B751E1CD26D2800E8F8C1 /* ViewModels */,
 				5BAD5E371CD7774B00014109 /* Models */,
@@ -126,6 +139,7 @@
 		0F3B750D1CD2539200E8F8C1 /* MVVMExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE67DB3A1CDCC06100BC5EDE /* Assemblies */,
 				5BB3A12D1CD7983B00326DE9 /* ViewModels */,
 				0F3B75101CD2539200E8F8C1 /* Info.plist */,
 			);
@@ -155,6 +169,8 @@
 			children = (
 				3DF13F10BDBA6A8AD19E7FA2 /* Pods-MVVMExample.debug.xcconfig */,
 				91060B12E0DA0BFF10CB03DB /* Pods-MVVMExample.release.xcconfig */,
+				F0705922427D0C5364DBB43B /* Pods-MVVMExampleTests.debug.xcconfig */,
+				EB4A2FE8D3FF400849CB4416 /* Pods-MVVMExampleTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -194,10 +210,31 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		CE67DB331CDCB3EF00BC5EDE /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				CE67DB341CDCB43F00BC5EDE /* AppAssembly.h */,
+				CE67DB351CDCB43F00BC5EDE /* AppAssembly.m */,
+				CE67DB371CDCB4A200BC5EDE /* StoreAssembly.h */,
+				CE67DB381CDCB4A200BC5EDE /* StoreAssembly.m */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		CE67DB3A1CDCC06100BC5EDE /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				CE67DB3B1CDCC0A100BC5EDE /* FakeStoreAssembly.h */,
+				CE67DB3C1CDCC0A100BC5EDE /* FakeStoreAssembly.m */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
 		DD42A4FC88421EE8EF9E6145 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				020C822CAA0580EF3B550B0B /* libPods-MVVMExample.a */,
+				E75085200B494AB7775BD43B /* libPods-MVVMExampleTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -345,7 +382,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVVMExample/Pods-MVVMExample-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVVMExampleTests/Pods-MVVMExampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BA58CF0E186FC6ABE8B416B9 /* Copy Pods Resources */ = {
@@ -360,7 +397,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVVMExample/Pods-MVVMExample-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVVMExampleTests/Pods-MVVMExampleTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C5CED8B4E8EB7022C190D702 /* Embed Pods Frameworks */ = {
@@ -401,9 +438,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BAD5E3E1CD77A6700014109 /* PersonStore.m in Sources */,
+				CE67DB361CDCB43F00BC5EDE /* AppAssembly.m in Sources */,
 				5BAD5E3A1CD7777200014109 /* Person.m in Sources */,
 				0F3B74FC1CD2539200E8F8C1 /* PersonListViewController.m in Sources */,
 				0F3B75211CD26E5D00E8F8C1 /* PersonListViewModel.m in Sources */,
+				CE67DB391CDCB4A200BC5EDE /* StoreAssembly.m in Sources */,
 				0F3B74F91CD2539200E8F8C1 /* AppDelegate.m in Sources */,
 				5BB3A12C1CD7887A00326DE9 /* NSURLSession+RAC.m in Sources */,
 				0F3B74F61CD2539200E8F8C1 /* main.m in Sources */,
@@ -414,6 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE67DB3D1CDCC0A100BC5EDE /* FakeStoreAssembly.m in Sources */,
 				5BB3A12F1CD7986800326DE9 /* PersonListViewModelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,7 +588,7 @@
 		};
 		0F3B75171CD2539200E8F8C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DF13F10BDBA6A8AD19E7FA2 /* Pods-MVVMExample.debug.xcconfig */;
+			baseConfigurationReference = F0705922427D0C5364DBB43B /* Pods-MVVMExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MVVMExampleTests/Info.plist;
@@ -561,7 +601,7 @@
 		};
 		0F3B75181CD2539200E8F8C1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91060B12E0DA0BFF10CB03DB /* Pods-MVVMExample.release.xcconfig */;
+			baseConfigurationReference = EB4A2FE8D3FF400849CB4416 /* Pods-MVVMExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MVVMExampleTests/Info.plist;

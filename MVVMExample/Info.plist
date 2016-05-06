@@ -28,6 +28,11 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>TyphoonInitialAssemblies</key>
+	<array>
+		<string>AppAssembly</string>
+		<string>StoreAssembly</string>
+	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

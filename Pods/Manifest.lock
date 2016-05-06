@@ -2,6 +2,9 @@ PODS:
   - libextobjc/EXTScope (0.4.1):
     - libextobjc/RuntimeExtensions
   - libextobjc/RuntimeExtensions (0.4.1)
+  - OCHamcrest (5.2.0)
+  - OCMockito (3.0.1):
+    - OCHamcrest (~> 5.1)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -9,13 +12,21 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
+  - Typhoon (3.4.5):
+    - Typhoon/no-arc (= 3.4.5)
+  - Typhoon/no-arc (3.4.5)
 
 DEPENDENCIES:
   - libextobjc/EXTScope
+  - OCMockito
   - ReactiveCocoa (= 2.5)
+  - Typhoon
 
 SPEC CHECKSUMS:
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  OCHamcrest: 218dc4022a5e928a275771da70c5dbea9f859287
+  OCMockito: 9eee3c61e42f7cb8aa015d66f8cc16849701d973
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  Typhoon: 200100687af3233ec5ed019064df3c9ffe350475
 
 COCOAPODS: 0.39.0
